@@ -18,3 +18,5 @@ NFOLDERLEVEL             NUMBER
 VCHFOLDERTYPE            CHAR(1)       
 DTCREATEDATE             DATE          
 DTMODIFYDATE             DATE   
+
+compile 'org.springframework.boot:spring-boot-starter-data-jpa'
