@@ -29,24 +29,18 @@ public class DemoApplication {
 			List<Folder> folder = null;
 			List<Report> reports = null;
 			
-			
-			List<AccountEntity> acList = acRepo.findAll();
-			List<EmployeeEntity> empList = epRepo.findAll();
-			
-			System.out.println("Done!"+((EmployeeEntity)empList.get(0)).getAccounts());
-			
-//			try {
-//				folder = folderRepo.findAll();
-//				System.out.println(folder.size());
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//			try {
-//				reports = reportRepo.findAll();
-//				System.out.println(reports.size());
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
+			try {
+				folder = folderRepo.findAll();
+				System.out.println(folder.size());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			try {
+				reports = reportRepo.findAll();
+				System.out.println(reports.size());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		};
 	}
 }
